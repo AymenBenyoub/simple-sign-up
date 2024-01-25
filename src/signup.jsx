@@ -10,10 +10,10 @@ export default function signup() {
         <input type="email" placeholder="Email" />
         <input type="password" placeholder="Password" />
         <input type="password" placeholder="Confirm Password" />
-        <div className="signupORlogin">
+        {/* <div className="signupORlogin">
           <button className="signupButton">Sign up</button>
           <button className="toggleAuth">Already have an account? Login</button>
-        </div>
+        </div> */}
       </section>
     </>
   );

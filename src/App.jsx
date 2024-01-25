@@ -1,10 +1,10 @@
 import "./styles.css";
-// import Signup from "./signup";
-import Login from "./Login";
+
+import ToggleAuthScreen from "./toggleAuthScreen";
 function App() {
   return (
     <>
-      <Login />
+      <ToggleAuthScreen />
     </>
   );
 }
