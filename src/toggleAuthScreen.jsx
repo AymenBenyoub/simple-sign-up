@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Login from "./Login.jsx";
+import Login from "./login.jsx";
 import Signup from "./signup.jsx";
 
 export default function ToggleAuthScreen() {
@@ -12,9 +12,9 @@ export default function ToggleAuthScreen() {
   return (
     <>
       {isLogin ? (
-        <Login toggleForm={toggleForm} />
+        <Login onClick={toggleForm} />
       ) : (
-        <Signup toggleForm={toggleForm} />
+        <Signup onClick={toggleForm} />
       )}
     </>
   );

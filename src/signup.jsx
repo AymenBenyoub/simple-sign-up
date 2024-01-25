@@ -1,4 +1,4 @@
-export default function signup({ toggleForm }) {
+export default function signup({ onClick }) {
   return (
     <>
       <section className="signupContainer">
@@ -12,7 +12,7 @@ export default function signup({ toggleForm }) {
         <input type="password" placeholder="Confirm Password" />
         <div className="signupORlogin">
           <button className="signupButton">Sign up</button>
-          <button className="toggleAuth" onClick={toggleForm}>
+          <button className="toggleAuth" onClick={onClick}>
             Already have an account? Login
           </button>
         </div>

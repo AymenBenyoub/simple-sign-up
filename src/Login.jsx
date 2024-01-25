@@ -1,4 +1,4 @@
-export default function Login({ toggleForm }) {
+export default function login({ onClick }) {
   const h2_inlineStyle = {
     marginBottom: "40px",
     marginTop: "40px",
@@ -11,7 +11,7 @@ export default function Login({ toggleForm }) {
         <input type="password" placeholder="Password" />
         <div className="signupORlogin">
           <button className="signupButton"> Login</button>
-          <button className="toggleAuth" onClick={toggleForm}>
+          <button className="toggleAuth" onClick={onClick}>
             Dont have an account? sign up
           </button>
         </div>
