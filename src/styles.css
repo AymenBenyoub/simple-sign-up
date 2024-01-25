@@ -59,3 +59,10 @@ body {
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
+.toggleAuth {
+  border: none;
+  font-size: 12px;
+  background-color: white;
+  cursor: pointer;
+  color: purple;
+}
