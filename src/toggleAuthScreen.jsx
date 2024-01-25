@@ -2,7 +2,7 @@ import { useState } from "react";
 import Login from "./Login.jsx";
 import Signup from "./signup.jsx";
 
-export default function toggleAuthScreen() {
+export default function ToggleAuthScreen() {
   const [isLogin, setIsLogin] = useState(true);
 
   const toggleForm = () => {
@@ -11,17 +11,11 @@ export default function toggleAuthScreen() {
 
   return (
     <>
-      {isLogin ? <Login /> : <Signup />}
-      <div className="signupORlogin">
-        <button className="signupButton">
-          {isLogin ? "Login" : "Sign up"}
-        </button>
-        <button className="toggleAuth" onClick={toggleForm}>
-          {isLogin
-            ? "Don't have an account? sign up"
-            : "Already have an account? Login"}
-        </button>
-      </div>
+      {isLogin ? (
+        <Login toggleForm={toggleForm} />
+      ) : (
+        <Signup toggleForm={toggleForm} />
+      )}
     </>
   );
 }
